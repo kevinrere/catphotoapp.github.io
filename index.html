@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<type>
-
-
-    
-</type>
+<!--!DOCTYPE大寫，告訴瀏覽器html的版本號-->
+<!--網頁的描述，link、meta、title 和 style 都应放入 head 标签-->
+<head><title>The best page ever</title></head>
+<!--This is Uncomment-->
+<style>
+  h2 {
+    color: red;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
 
 <html>
     <!--main, header, footer, nav, video, article, section-->
+    <head><title>The best page ever</title></head>
     <!--These tags give a descriptive structure to your HTML, make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility.-->
 <main>
+    <body><!--body網頁的內容，包括h1，p-->
+      <!-- h1~h6 -->
     <h1>Hello World</h1>
-    <h2>CatPhotoApp</h2>
+    <h2 class="blue-text" style="color: blue;">CatPhotoApp</h2><!--文字顏色-->
+    <p><a href="#footer">Jump to Bottom</a></p>
     <!--target="_blank"   this causes the linked document to open in a new window tab-->
     <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>
-    <!--href="#"   ameans a DEAD LINK-->
+    <!--Paragraph Element-->
     <p>View more<a href="https://www.freecodecamp.org" target="_blank"> cat photos</a></p>
+    <!--href="#"   ameans a DEAD LINK--> <!--add image-->
     <a href="#"></a><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
-    <div>
+    <div><!--div內容劃分元素-->
     <p>Things cats love:</p>
+    <!--Bulleted Unordered List-->
     <ul>
       <li>cat nip</li>
       <li>laser pointers</li>
       <li>lasagna</li>
     </ul>
     <p>Top 3 things cats hate:</p>
+    <!--Ordered List-->
     <ol>
         <li>flea treatment</li>
         <li>thunder</li>
@@ -31,10 +45,10 @@
       </ol>
       </div>
       <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-          <!--Radio Buttons-->
+          <!--Radio Buttons--><!--value attribute規定發送給服務器的實際信息-->
         <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
         <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
-        <!--Checkboxes-->
+        <!--Checkboxes--><!--default默認勾選-->
         <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
         <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
         <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
@@ -42,12 +56,13 @@
         <input type="text" placeholder="cat photo URL" required>
         <button type="submit">Submit</button>
       </form>
-    
     <!--Placeholder Text which ofen use the lorem ipsum text-->
-    <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+    <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching
+         attack your ankles chase the red dot, hairball run catnip eat the 
+         grass sniff.</p>
+    </body>
 </main>
-<body>
 
-</body>
-<footer>Copyright Cat Photo App</footer>
+
+<footer id="footer">Copyright Cat Photo App</footer>
 </html>
