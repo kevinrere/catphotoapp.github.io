@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <type>
 
 
@@ -5,10 +6,48 @@
 </type>
 
 <html>
-<head>
-    <h1>CatPhotoApp</h1>
-</head>
+    <!--main, header, footer, nav, video, article, section-->
+    <!--These tags give a descriptive structure to your HTML, make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility.-->
+<main>
+    <h1>Hello World</h1>
+    <h2>CatPhotoApp</h2>
+    <!--target="_blank"   this causes the linked document to open in a new window tab-->
+    <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>
+    <!--href="#"   ameans a DEAD LINK-->
+    <p>View more<a href="https://www.freecodecamp.org" target="_blank"> cat photos</a></p>
+    <a href="#"></a><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+    <div>
+    <p>Things cats love:</p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      </div>
+      <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+          <!--Radio Buttons-->
+        <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+        <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+        <!--Checkboxes-->
+        <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+        <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+        <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+        <!--Text Field and Submit Button-->
+        <input type="text" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+      </form>
+    
+    <!--Placeholder Text which ofen use the lorem ipsum text-->
+    <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+</main>
 <body>
 
 </body>
+<footer>Copyright Cat Photo App</footer>
 </html>
